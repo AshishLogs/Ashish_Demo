@@ -84,7 +84,7 @@ final class HoldingTests: XCTestCase {
         
         let quantity = -10
         
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: quantity,
@@ -102,7 +102,7 @@ final class HoldingTests: XCTestCase {
     }
     
     func testZeroLTPThrowsError() {
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: 10,
@@ -116,7 +116,7 @@ final class HoldingTests: XCTestCase {
     }
     
     func testNegativeLTPThrowsError() {
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: 10,
@@ -130,7 +130,7 @@ final class HoldingTests: XCTestCase {
     }
     
     func testZeroAvgPriceThrowsError() {
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: 10,
@@ -144,7 +144,7 @@ final class HoldingTests: XCTestCase {
     }
     
     func testZeroCloseThrowsError() {
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: 10,
@@ -158,7 +158,7 @@ final class HoldingTests: XCTestCase {
     }
     
     func testInfiniteLTPThrowsError() {
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: 10,
@@ -172,7 +172,7 @@ final class HoldingTests: XCTestCase {
     }
     
     func testNaNLTPThrowsError() {
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: 10,
@@ -186,7 +186,7 @@ final class HoldingTests: XCTestCase {
     }
     
     func testInfinitePNLThrowsError() {
-         & Then
+         
         XCTAssertThrowsError(try Holding(
             symbol: "RELIANCE",
             quantity: 10,

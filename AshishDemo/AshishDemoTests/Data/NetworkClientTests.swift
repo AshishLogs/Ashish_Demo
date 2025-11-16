@@ -71,20 +71,6 @@ final class NetworkClientTests: XCTestCase {
         }
     }
     
-    func testRequestTimeout() async {
-        
-        // This would require a mock that simulates timeout
-        // For now, we test the error handling structure
-        
-        struct TestResponse: Codable {
-            let message: String
-        }
-        
-         & Then
-        // In a real scenario, you'd mock URLSession to timeout
-        // This is a placeholder for the test structure
-    }
-    
     // MARK: - Error Handling Tests
     
     func testNetworkErrorTypes() {

@@ -88,7 +88,7 @@ final class HoldingsRepositoryImplTests: XCTestCase {
         mockAPIService.errorToThrow = NSError(domain: "NetworkError", code: 500, userInfo: nil)
         mockCoreDataService.holdingsToReturn = []
         
-         & Then
+         
         do {
             _ = try await repository.fetchHoldings()
             XCTFail("Expected error to be thrown")
@@ -103,7 +103,7 @@ final class HoldingsRepositoryImplTests: XCTestCase {
         mockAPIService.errorToThrow = NSError(domain: "NetworkError", code: 500, userInfo: nil)
         mockCoreDataService.errorToThrow = NSError(domain: "CoreDataError", code: 1, userInfo: nil)
         
-         & Then
+         
         do {
             _ = try await repository.fetchHoldings()
             XCTFail("Expected error to be thrown")

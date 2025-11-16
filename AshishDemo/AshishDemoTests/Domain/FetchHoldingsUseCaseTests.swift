@@ -60,7 +60,7 @@ final class FetchHoldingsUseCaseTests: XCTestCase {
         let expectedError = NSError(domain: "TestError", code: 500, userInfo: nil)
         mockRepository.errorToThrow = expectedError
         
-         & Then
+         
         do {
             _ = try await useCase.execute()
             XCTFail("Expected error to be thrown")

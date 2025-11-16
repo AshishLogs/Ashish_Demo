@@ -221,23 +221,6 @@ final class HoldingsViewModelTests: XCTestCase {
         }
     }
     
-    func testCancelCancelsUseCase() {
-        
-        mockRepository.holdingsToReturn = try! createMockHoldings()
-        
-        
-        Task {
-            await viewModel.loadHoldings()
-        }
-        
-        viewModel.cancel()
-        
-        
-        // Cancel should be called on use case
-        // We can't easily verify this without exposing internal state
-        // But the method should complete without error
-    }
-    
     // MARK: - Retry Tests
     
     func testRetrySetsLoadingState() async {

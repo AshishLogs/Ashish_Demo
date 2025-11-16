@@ -141,7 +141,7 @@ final class HoldingsMapperTests: XCTestCase {
             close: 2480.0
         )
         
-         & Then
+         
         XCTAssertThrowsError(try HoldingsMapper.map(dto)) { error in
             XCTAssertTrue(error is DomainError)
         }
@@ -157,7 +157,7 @@ final class HoldingsMapperTests: XCTestCase {
             close: 2480.0
         )
         
-         & Then
+         
         XCTAssertThrowsError(try HoldingsMapper.map(dto)) { error in
             XCTAssertTrue(error is DomainError)
         }
@@ -173,7 +173,7 @@ final class HoldingsMapperTests: XCTestCase {
             close: 2480.0
         )
         
-         & Then
+         
         XCTAssertThrowsError(try HoldingsMapper.map(dto)) { error in
             if case DomainError.calculationError = error {
                 // Expected
@@ -209,7 +209,7 @@ final class HoldingsMapperTests: XCTestCase {
             )
         ]
         
-         & Then
+         
         XCTAssertThrowsError(try HoldingsMapper.map(dtos)) { error in
             XCTAssertTrue(error is DomainError)
         }
