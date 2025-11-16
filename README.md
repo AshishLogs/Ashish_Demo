@@ -2,19 +2,6 @@
 
 A production-ready iOS application built with **UIKit**, **Clean Architecture**, and **MVVM** pattern for displaying financial holdings data with offline support.
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Architecture](#architecture)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Technologies](#technologies)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-
 ## ✨ Features
 
 - 📊 **Holdings Display**: View your financial holdings with detailed information
