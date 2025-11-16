@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+    <entity name="HoldingEntity" representedClassName="HoldingEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="avgPrice" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="close" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String" optional="NO"/>
+        <attribute name="lastUpdated" attributeType="Date" usesScalarValueType="NO" optional="NO"/>
+        <attribute name="ltp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" optional="NO"/>
+        <attribute name="pnl" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" optional="NO"/>
+        <attribute name="quantity" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" optional="NO"/>
+        <attribute name="symbol" attributeType="String" optional="NO"/>
+    </entity>
+</model>
